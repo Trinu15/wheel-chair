@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wheelchair Icon Recreation</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #cfcfcf;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .wheelchair {
+      position: relative;
+      width: 160px;
+      height: 160px;
+    }
+    /* Head */
+    .head {
+      width: 30px;
+      height: 30px;
+      background-color: #1a4063;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 65px;
+    }
+
+    /* Body */
+    .body {
+      position: absolute;
+      top: 30px;
+      left: 65px;
+      width: 30px;
+      height: 90px;
+      background-color: #1a4063;
+    }
+
+    /* Left Arm/Support */
+    .left-arm {
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      width: 15px;
+      height: 60px;
+      background-color: #1a4063;
+    }
+
+    /* Big wheel */
+    .outer-wheel {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #1a4063;
+      bottom: 0;
+      left: 15px;
+    }
+
+    /* Light blue center */
+    .middle-wheel {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background-color: #7ab2e0;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* Small center dot */
+    .center-dot {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background-color: #1a4063;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* Curved leg rest on right */
+    .leg-rest {
+      position: absolute;
+      width: 60px;
+      height: 80px;
+      border: 20px solid #1a4063;
+      border-right: none;
+      border-top: none;
+      border-radius: 0 0 0 60px;
+      bottom: 15px;
+      left: 90px;
+      right: 100px;
+      transform: rotate(180deg); /* Flipped upside down */
+      box-sizing: border-box;
+    }
+    .footplate {
+    position: absolute;
+    width: 30px;
+    height: 17px;
+    background-color: #1a4063;
+    bottom: 15px;
+    left: 100px;
+    border-radius: 0px;
+    z-index: 2;
+  }
+  </style>
+</head>
+<body>
+  <div class="wheelchair">
+    <div class="head"></div>
+    <div class="body"></div>
+    <div class="left-arm"></div>
+    <div class="outer-wheel">
+      <div class="middle-wheel">
+        <div class="center-dot"></div>
+      </div>
+    </div>
+    <div class="leg-rest"></div>
+    <div class="footplate"></div>
+  </div>
+</body>
+</html>
